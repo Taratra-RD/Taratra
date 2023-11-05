@@ -1,0 +1,52 @@
+.card--modal {
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    background-color: white;
+    animation-name: slide-left;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-left {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.card--modal--layout {
+    padding-block: 1.5rem 1.5rem;
+    padding-inline: 1rem 1rem;
+}
+
+.card--modal--image {
+    display: flex;
+    flex-direction: row;
+}
+
+.card--modal--image--left {
+    width: 70%;
+    height: 30rem;
+    border: 1px solid black;
+}
+
+.card--modal--image--right {
+    margin-inline: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.card--modal--image--right div {
+    border: 1px solid black;
+    height: 9rem;
+    width: 100%;
+}
