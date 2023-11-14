@@ -14,7 +14,7 @@
 
 .project {
   position: relative;
-  min-height: 92vh;
+  min-height: 90vh;
   padding-inline: 7% 7%;
 }
 
@@ -40,15 +40,21 @@
 }
 
 .card {
-  width: 21rem;
-  height: 30rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid black;
+  width: 22.6rem;
+  height: 30.8rem;
   border-radius: 0.4rem;
+  padding-block: 0 1rem;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.card--body {
+  padding-inline: 0.8rem 0.8rem;
 }
 
 .card--image {
   height: 60%;
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
 }
 
 .card--title {
@@ -57,6 +63,25 @@
 
 .card--description {
   text-align: justify;
+}
+
+.card--over {
+  animation: other;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes other {
+  0% {
+    background-image: url(../../../image/project/other/image1.png);
+  }
+  50% {
+    background-image: url(../../../image/project/other/image2.png);
+  }
+  100% {
+    background-image: url(../../../image/project/other/image3.png);
+  }
 }
 
 .education {
@@ -101,10 +126,11 @@
   align-items: center;
   justify-content: center;
   height: 10rem;
-  border: 1px solid black;
+  box-shadow: 1px 1px 5px black;
   border-radius: 0.3rem;
   margin-block: 1rem 1rem;
   margin-inline: 1rem 1rem;
+  background-color: rgba(13, 240, 209, 0.05);
 }
 
 .footer {

@@ -1,52 +1,63 @@
 .card--modal {
-    position: fixed;
-    min-height: 100vh;
-    width: 100%;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    background-color: white;
-    animation-name: slide-left;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  background-color: white;
+  animation-name: slide-left;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes slide-left {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .card--modal--layout {
-    padding-block: 1.5rem 1.5rem;
-    padding-inline: 1rem 1rem;
+  padding-block: 1.5% 1.5%;
+  padding-inline: 1rem 1rem;
+  height: 95%;
 }
 
 .card--modal--image {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  height: 60%;
 }
 
 .card--modal--image--left {
-    width: 70%;
-    height: 30rem;
-    border: 1px solid black;
+  width: 70%;
+  border: 1px solid black;
+  height: 100%;
 }
 
 .card--modal--image--right {
-    margin-inline: 1rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30%;
+  margin-inline: 1rem 1rem;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
 }
 
 .card--modal--image--right div {
-    border: 1px solid black;
-    height: 9rem;
-    width: 100%;
+  border: 1px solid black;
+  height: 31%;
+  width: 100%;
+}
+
+.card--modal--body {
+  height: 40%;
+}
+
+.card--modal--body h1 {
+  margin-bottom: 0.5rem;
 }
